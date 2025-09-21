@@ -1,8 +1,5 @@
 #!/bin/bas
 
-person1=$1
-person2=$2
-
-echo "his first name is $person1"
-
-echo "his second name is $person2" 
+echo "enter your pin number"
+read PIN_NUMBER
+echo "pin entered is:$PIN_NUMBER"
