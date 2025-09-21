@@ -1,6 +1,6 @@
 #!/bin/bas
 
-name=abhi
+name=ABHISHEK
 car=tharroxx
 
 echo "what is you name"
