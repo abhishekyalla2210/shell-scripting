@@ -1,7 +1,7 @@
 #!/bin/bas
 
-person1=abhi
-person2=shek
+person1=$1
+person2=$2
 
 echo "his first name is $person1"
 
