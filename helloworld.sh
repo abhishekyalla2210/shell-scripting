@@ -5,4 +5,4 @@ Person2=shek
 
 echo "who is that $person1"
 echo "who is that $person2"
-what up
+echo "this is shell-scripting"
