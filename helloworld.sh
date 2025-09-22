@@ -1,5 +1,10 @@
 #!/bin/bash
 
-DATE=$(date %Y-%m)
+START_TIME=$(date %s)
 
-echo "$DATE is the date"
+slepp 5
+END_TIME=$(date %S)
+
+TOTAL_TIME=(($START_TIME-$END_TIME))
+
+echo "$DATE is the date" 
