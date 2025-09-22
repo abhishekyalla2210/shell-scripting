@@ -1,4 +1,4 @@
-#!/bin/bas
+#!/bin/bash
 
 Person1=abhi
 Person2=shek
