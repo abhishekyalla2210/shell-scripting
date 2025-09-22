@@ -1,5 +1,6 @@
 #!/bin/bas
 
-echo "enter your pin number"
-read -s PIN_NUMBER
-echo "pin entered is:$PIN_NUMBER"
+Person1=abhi
+Person2=shek
+
+echo "who is that $person1"
