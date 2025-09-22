@@ -2,9 +2,9 @@
 
 START_TIME=$(date %s)
 
-slepp 5
+sleep 5
 END_TIME=$(date %S)
 
-TOTAL_TIME=(($START_TIME-$END_TIME))
+TOTAL_TIME=(($END_TIME-$START_TIME))
 
-echo "$DATE is the date" 
+echo " now the total is:$TOTAL_TIME"
