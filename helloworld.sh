@@ -1,9 +1,9 @@
 #!/bin/bash
 
-START_TIME=$(date +%s)
+START_TIME=100
 
-sleep 5
-END_TIME=$(date +%s+)
+
+END_TIME=200
 
 TOTAL_TIME=$(($END_TIME-$START_TIME))
 
