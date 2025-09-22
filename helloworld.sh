@@ -5,6 +5,6 @@ START_TIME=$(date +%s)
 sleep 5
 END_TIME=$(date +%s+)
 
-TOTAL_TIME=(($END_TIME-$START_TIME))
+TOTAL_TIME=$(($END_TIME-$START_TIME))
 
 echo " now the total is:$TOTAL_TIME"
