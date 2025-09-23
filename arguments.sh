@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ $NUMBER -lt 20];then
+NUMBER=$1
+
+if [ $NUMBER -lt 20]; then
     echo "the number is less than 20"
 
 else 
