@@ -2,7 +2,7 @@
 
 NUMBER=$1
 
-if [ $NUMBER -lt 20]; then
+if [ $NUMBER -lt 20 ]; then
     echo "the number is less than 20"
 
 else 
