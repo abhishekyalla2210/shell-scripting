@@ -5,4 +5,4 @@ if [ $NUMBER -lt 20];then
 
 else 
     echo "the number is greater than 20"
-    
+fi
