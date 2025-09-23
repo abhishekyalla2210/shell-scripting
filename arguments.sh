@@ -1,7 +1,8 @@
 #!/bin/bash
 
-person1=$1
-person2=$2
+NUMBER1=2100
+NUMBER2=736
 
-echo "he name is $1"
-echo "he is also known as $2"
+TOTAL=$(($NUMBER1+$NUMBER2))
+
+echo "total is : $TOTAL "
