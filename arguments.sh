@@ -1,5 +1,8 @@
 #!/bin/bash
 
-TOOLS=("terraform" "kubernetees")
-echo "the given are: ${TOOLS[@]}"
-echo "the given are: $TOOLS[0]"
+if [ $NUMBER -lt 20];then
+    echo "the number is less than 20"
+
+else 
+    echo "the number is greater than 20"
+    
