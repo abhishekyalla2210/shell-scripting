@@ -1,6 +1,7 @@
 #!/bin/bash
 
-LEADER=(TRUMP "MODI")
+person1=abhishek
+person2=kishore
 
-echo "all leader: ${LEADER[@]}"
-echo "one leader: ${LEADER[1]}"
+echo "he is $person1"
+echo "and he is $person2"
