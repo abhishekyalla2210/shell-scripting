@@ -8,7 +8,7 @@ W="\e[34m"
 
 LOGS="/var/log/shell-script"
 SCRIPTNAME=$( echo $0 | cut -d "." -f1 )
-LOGFILE="$LOGFILE/$SCRIPTNAME.log" 
+LOGFILE="$LOG/$SCRIPTNAME.log" 
 
 mkdir -p $LOGFILE
 echo "script start at: $(date)"
