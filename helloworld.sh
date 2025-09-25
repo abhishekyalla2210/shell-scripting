@@ -1,7 +1,10 @@
 #!/bin/bash
 
-person1=abhishek
-person2=kishore
+START_TIME=100
 
-echo "he is $person1"
-echo "and he is $person2"
+
+END_TIME=200
+
+TOTAL_TIME=$(($END_TIME+$START_TIME))
+
+echo " now the total is:$TOTAL_TIME"
