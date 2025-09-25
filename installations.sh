@@ -18,6 +18,7 @@ if [ $1 -ne 0 ]; then
 else
     echo -e "installing $2 is a $G success $N"
     fi
+}
 
     dnf install mysql -y
     VALIDATE $? "mysql"
@@ -27,4 +28,3 @@ else
 
     dnf install python3 -y
     VALIDATE $? "python3"
-}
