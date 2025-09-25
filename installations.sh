@@ -1,8 +1,8 @@
 #!/bin/bash
 
-USERID=$(id -u)
+status=$($?)
 
-if [ $USERID -ne 0 ]; then
+if [ $status -ne 0 ]; then
     echo "it is a failure"
 else 
     echo "it is a succes"
