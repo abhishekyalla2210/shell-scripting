@@ -1,6 +1,6 @@
 #!/bin/bash
 
-status=$($?)
+status=$(echo $?)
 
 if [ $status -eq 0 ]; then
     echo "it is a success"
