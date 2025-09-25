@@ -11,7 +11,7 @@ fi
 dnf install mysql -y
 
 if [ $? -eq 0 ]; then
-    echo "it is a success"
+    echo "mysql is a success"
 else
-    echo "it is a falure"
+    echo "mysql is a falure"
 fi
