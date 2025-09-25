@@ -17,5 +17,5 @@ VALIDATE(){
 }
 
 dnf install mysql -y
-VALIDATE $? "mysql"
+VALIDATE $? "123"
 
