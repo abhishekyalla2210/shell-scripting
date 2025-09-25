@@ -20,11 +20,11 @@ else
     fi
 
     dnf install mysql -y
-    VALIDATE() $? "mysql"
+    VALIDATE $? "mysql"
 
     dnf install nginx -y
-    VALIDATE() $? "nginx"
+    VALIDATE $? "nginx"
 
     dnf install python3 -y
-    VALIDATE() $? "python3"
+    VALIDATE $? "python3"
 }
