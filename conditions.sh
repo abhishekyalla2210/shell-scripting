@@ -1,9 +1,15 @@
 #!/bin/bash
-
-echo "enter the number"
-read NUMBER
-
-if [ $(($NUMBER % 2,3,5 -eq 0 ))];then
-    echo "the given number $NUMBER is a prime number"
-else    echo "it is not prime"
+read -p "Enter a number: " num
+if [ $num -lt 2 ]; then
+  echo "$num is not a prime number."
+  exit
 fi
+
+for ((i=2; i<=num/2; i++))
+do
+  if [ $(($num % $i)) -eq 0 ]; then
+    echo "$num is not a prime number."
+    exit
+  fi
+done
+echo "$num is a prime number."
