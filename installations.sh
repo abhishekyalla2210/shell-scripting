@@ -23,7 +23,7 @@ VALIDATE(){
 
 dnf install mysql -y
 if [ $? -ne 0]; then
-    echo "$2 already exists ....$G skipping $N"
+    echo -e "$2 already exists ....$G skipping $N"
 VALIDATE $? "mysql"
 
 dnf install nginxadf -y
