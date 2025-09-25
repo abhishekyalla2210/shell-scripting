@@ -16,11 +16,11 @@ VALIDATE(){
  fi
 }
 
-dnf install mysql -y
+dnf remove mysql -y
 VALIDATE $? "mysql"
 
-dnf install nginx -y
+dnf remove nginx -y
 VALIDATE $? "nginx"
 
-dnf install python -y
+dnf remove python -y
 VALIDATE $? "python"
