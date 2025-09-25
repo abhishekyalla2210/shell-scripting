@@ -2,8 +2,8 @@
 
 status=$($?)
 
-if [ $status -ne 0 ]; then
-    echo "it is a failure"
+if [ $status -eq 0 ]; then
+    echo "it is a success"
 else 
-    echo "it is a succes"
+    echo "it is a failure"
 fi
