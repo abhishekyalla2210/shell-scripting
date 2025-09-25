@@ -8,7 +8,7 @@ if [ $USERID -ne 0 ]; then
 
 fi
 
-dnf install mysqlff -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]; then
     echo "mysql is a success"
