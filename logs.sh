@@ -21,10 +21,10 @@ fi
 
 VALIDATE(){ # functions receive inputs through args just like shell script args
     if [ $1 -ne 0 ]; then
-        echo -e "Installing $2 ... $R FAILURE $N" | tee -a $LOGS
+        echo -e "Installing $2 ... $R FAILURE $N" 
         exit 1
     else
-        echo -e "Installing $2 ... $G SUCCESS $N" | tee -a $LOGS
+        echo -e "Installing $2 ... $G SUCCESS $N"
     fi
 }
 
@@ -34,7 +34,7 @@ if [ $? -ne 0 ]; then
     dnf install mysql -y &>>$LOGS
     VALIDATE $? "MySQL"
 else
-    echo -e "MySQL already exist ... $Y SKIPPING $N" | tee -a $LOGS
+    echo -e "MySQL already exist ... $Y SKIPPING $N"
 fi
 
 dnf list installed nginx &>>$LOGS
@@ -42,7 +42,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y &>>$LOGS
     VALIDATE $? "Nginx"
 else
-    echo -e "Nginx already exist ... $Y SKIPPING $N" | tee -a $LOGS
+    echo -e "Nginx already exist ... $Y SKIPPING $N"
 fi
 
 dnf list installed python3 &>>$LOGS
@@ -50,6 +50,6 @@ if [ $? -ne 0 ]; then
     dnf install python3 -y &>>$LOGS
     VALIDATE $? "python3"
 else
-    echo -e "Python3 already exist ... $Y SKIPPING $N" | tee -a $LOGS
+    echo -e "Python3 already exist ... $Y SKIPPING $N"
 fi
 
