@@ -13,15 +13,16 @@ VALIDATE(){
     echo "$2 is a success"
    else
     echo "$2 is a falure"
+    exit 1
     
  fi
 }
 
-dnf remove mysql -y
+dnf intall mysql -y
 VALIDATE $? "mysql"
 
-dnf remove nginx -y
+dnf intall nginx -y
 VALIDATE $? "nginx"
 
-dnf remove python -y
+dnf intall python -y
 VALIDATE $? "python"
